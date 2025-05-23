@@ -28,7 +28,7 @@ def reply_message(reply_token, message):
     }
     requests.post("https://api.line.me/v2/bot/message/reply", headers=headers, data=json.dumps(body))
 
-@app.route("/api/linewebhook", methods=["POST"])
+@app.route("/api/line_webhook", methods=["POST"])
 def webhook():
     # 驗證簽名
     body = request.get_data(as_text=True)
