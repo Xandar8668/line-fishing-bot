@@ -71,5 +71,5 @@ def add_registration(data):
         total
     ]
 
-    worksheet.append_row(row, value_input_option="USER_ENTERED")
+    print("要寫入的資料列：", row)
     return total
